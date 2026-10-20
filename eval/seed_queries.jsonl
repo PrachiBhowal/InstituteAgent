@@ -1,0 +1,20 @@
+{"q": "what's my schedule today", "tool": "get_schedule"}
+{"q": "timetable for friday", "tool": "get_schedule"}
+{"q": "when is my next class", "tool": "get_schedule"}
+{"q": "mera aaj ka time table kya hai", "tool": "get_schedule"}
+{"q": "kya padhai hai aaj", "tool": "get_schedule"}
+{"q": "which subjects do we have on monday", "tool": "get_schedule"}
+{"q": "what lectures do I have tomorrow", "tool": "get_schedule"}
+{"q": "what are we studying on wednesday", "tool": "get_schedule"}
+{"q": "when is the dbms exam", "tool": "get_exams"}
+{"q": "kab hai exam", "tool": "get_exams"}
+{"q": "is there a holiday this month", "tool": "get_holidays"}
+{"q": "which days is college closed in november", "tool": "get_holidays"}
+{"q": "what assignments are pending", "tool": "get_assignments"}
+{"q": "submission deadline for os lab", "tool": "get_assignments"}
+{"q": "any events coming up", "tool": "get_events"}
+{"q": "is there a hackathon this month", "tool": "get_events"}
+{"q": "what did the circular say about fees", "tool": "search_notices"}
+{"q": "any notice about scholarship forms", "tool": "search_notices"}
+{"q": "tell me a joke", "tool": null}
+{"q": "what is the capital of france", "tool": null}
