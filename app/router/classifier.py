@@ -70,6 +70,17 @@ EXAMPLES: dict[str, list[str]] = {
         "is there a hackathon this month",
         "upcoming workshops and seminars",
     ],
+    "get_session_plan": [
+        "what will we cover in os next week",
+        "topics planned for tomorrow's lecture",
+        "what are we learning in networks on tuesday",
+        "syllabus for the next session",
+    ],
+    "register_event": [
+        "sign me up for the guest lecture",
+        "i want to join the workshop",
+        "put my name down for the hackathon",
+    ],
     "search_notices": [
         "what did the circular say about fees",
         "any notice about scholarship forms",
