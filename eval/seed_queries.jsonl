@@ -18,3 +18,11 @@
 {"q": "any notice about scholarship forms", "tool": "search_notices"}
 {"q": "tell me a joke", "tool": null}
 {"q": "what is the capital of france", "tool": null}
+{"q": "what will we cover in os next week", "tool": "get_session_plan"}
+{"q": "topics for tomorrow's lecture", "tool": "get_session_plan"}
+{"q": "register me for the hackathon", "tool": "register_event"}
+{"q": "sign me up for the guest lecture", "tool": "register_event"}
+{"q": "what is due this week", "tool": "get_assignments"}
+{"q": "dbms exam date", "tool": "get_exams"}
+{"q": "holidays in november", "tool": "get_holidays"}
+{"q": "any workshops this month", "tool": "get_events"}
