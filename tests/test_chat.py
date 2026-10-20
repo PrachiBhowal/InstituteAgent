@@ -38,7 +38,7 @@ def test_clarification_asked_once(orch):
 
 
 def test_unbuilt_tool_falls_back_with_contact(orch):
-    j = chat(orch, "any holidays this month")
+    j = chat(orch, "any circular about fees")
     assert j["fallback"] and j["cards"][0]["type"] == "contact"
     assert j["cards"][0]["items"][0]["email"] == "admin@test.edu"
 
