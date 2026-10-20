@@ -1,0 +1,11 @@
+{"updated_at": "2026-10-12T10:00:00+05:30", "updated_by_role": "admin",
+ "items": [
+  {"id": "EV-101", "audience": ["ALL"],     "status": "published", "title": "Hackathon 2026",                 "category": "tech",   "date": "2026-11-14", "start": "10:00", "venue": "Seminar Hall", "capacity": 60,  "registered_count": 41,  "registration_deadline": "2026-11-10"},
+  {"id": "EV-102", "audience": ["ALL"],     "status": "published", "title": "Guest Lecture: Cloud Careers",   "category": "talk",   "date": "2026-10-28", "start": "15:00", "venue": "Auditorium",   "capacity": 200, "registered_count": 120, "registration_deadline": "2026-10-27"},
+  {"id": "EV-103", "audience": ["ALL"],     "status": "published", "title": "Robotics Workshop",              "category": "tech",   "date": "2026-11-05", "start": "11:00", "venue": "Lab 3",        "capacity": 2,   "registered_count": 2,   "registration_deadline": "2026-11-01"},
+  {"id": "EV-104", "audience": ["ALL"],     "status": "published", "title": "Alumni Meet",                    "category": "social", "date": "2026-10-12", "start": "17:00", "venue": "Lawn",         "capacity": 100, "registered_count": 70,  "registration_deadline": "2026-10-10"},
+  {"id": "EV-105", "audience": ["ALL"],     "status": "draft",     "title": "Sports Day",                     "category": "sports", "date": "2026-11-21", "start": "08:00", "venue": "Ground",       "capacity": 300, "registered_count": 0,   "registration_deadline": "2026-11-15"},
+  {"id": "EV-106", "audience": ["ALL"],     "status": "published", "title": "Resume Writing Workshop",        "category": "career", "date": "2026-11-12", "start": "14:00", "venue": "Room 204",     "capacity": 40,  "registered_count": 10,  "registration_deadline": "2026-11-10"},
+  {"id": "EV-107", "audience": ["BATCH-B"], "status": "published", "title": "Batch B Orientation",            "category": "social", "date": "2026-10-30", "start": "10:00", "venue": "Room 101",     "capacity": 50,  "registered_count": 5,   "registration_deadline": "2026-10-28"},
+  {"id": "EV-108", "audience": ["ALL"],     "status": "published", "title": "Open Source Day",                "category": "tech",   "date": "2026-10-25", "start": "10:00", "venue": "Lab 1",        "capacity": 30,  "registered_count": 3,   "registration_deadline": "2026-10-19"}
+ ]}

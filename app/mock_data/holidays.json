@@ -1,0 +1,9 @@
+{"updated_at": "2026-10-10T11:00:00+05:30", "updated_by_role": "admin",
+ "items": [
+  {"batch_id": "ALL", "status": "published", "date": "2026-10-31", "name": "Institute Foundation Day"},
+  {"batch_id": "ALL", "status": "published", "date": "2026-11-08", "name": "Diwali"},
+  {"batch_id": "ALL", "status": "published", "date": "2026-11-09", "name": "Diwali break"},
+  {"batch_id": "ALL", "status": "published", "date": "2026-12-25", "name": "Christmas"},
+  {"batch_id": "ALL", "status": "published", "date": "2026-10-02", "name": "Gandhi Jayanti"},
+  {"batch_id": "ALL", "status": "draft",     "date": "2026-11-20", "name": "Unconfirmed closure (draft)"}
+ ]}

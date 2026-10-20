@@ -1,0 +1,11 @@
+{"updated_at": "2026-10-18T20:00:00+05:30", "updated_by_role": "teacher",
+ "items": [
+  {"batch_id": "BATCH-A", "status": "published", "course": "Computer Networks",   "date": "2026-10-20", "topics": ["TCP congestion control", "Slow start and fast recovery"]},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Database Systems",    "date": "2026-10-20", "topics": ["Normalization: 3NF and BCNF"]},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Operating Systems",   "date": "2026-10-21", "topics": ["Deadlock conditions", "Resource allocation graphs"]},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Software Engineering","date": "2026-10-21", "topics": ["Requirements elicitation"]},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Operating Systems",   "date": "2026-10-27", "topics": ["Deadlock detection and recovery", "Banker's algorithm"]},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Computer Networks",   "date": "2026-10-27", "topics": ["Subnetting and CIDR"]},
+  {"batch_id": "BATCH-A", "status": "draft",     "course": "Operating Systems",   "date": "2026-10-28", "topics": ["Draft topic not yet confirmed"]},
+  {"batch_id": "BATCH-B", "status": "published", "course": "Operating Systems",   "date": "2026-10-27", "topics": ["Different batch, different plan"]}
+ ]}
