@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-10-19T18:30:00+05:30",
+  "updated_by_role": "teacher",
+  "batches": {
+    "BATCH-A": {
+      "0": [
+        {"course": "Database Systems", "start": "09:00", "end": "10:00", "room": "R101", "teacher": "Prof. Rao"},
+        {"course": "Operating Systems", "start": "10:15", "end": "11:15", "room": "R101", "teacher": "Prof. Iyer"},
+        {"course": "Python Lab", "start": "14:00", "end": "16:00", "room": "Lab 2", "teacher": "Prof. Nair"}
+      ],
+      "1": [
+        {"course": "Computer Networks", "start": "09:00", "end": "10:00", "room": "R102", "teacher": "Prof. Menon"},
+        {"course": "Database Systems", "start": "11:30", "end": "12:30", "room": "R101", "teacher": "Prof. Rao"}
+      ],
+      "2": [
+        {"course": "Operating Systems", "start": "09:00", "end": "10:00", "room": "R101", "teacher": "Prof. Iyer"},
+        {"course": "Software Engineering", "start": "10:15", "end": "11:15", "room": "R103", "teacher": "Prof. Kumar"}
+      ],
+      "3": [
+        {"course": "Computer Networks", "start": "10:00", "end": "11:00", "room": "R102", "teacher": "Prof. Menon"},
+        {"course": "Database Lab", "start": "14:00", "end": "16:00", "room": "Lab 1", "teacher": "Prof. Rao"}
+      ],
+      "4": [
+        {"course": "Software Engineering", "start": "09:00", "end": "10:00", "room": "R103", "teacher": "Prof. Kumar"},
+        {"course": "Operating Systems", "start": "11:00", "end": "12:00", "room": "R101", "teacher": "Prof. Iyer"}
+      ]
+    }
+  }
+}
