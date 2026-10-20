@@ -55,3 +55,49 @@ def resolve_date(text: str, today: dt.date) -> DateResult:
         except ValueError:
             pass
     return DateResult()
+
+
+_MONTHS = {
+    "january": 1, "jan": 1, "february": 2, "feb": 2, "march": 3, "april": 4,
+    "may": 5, "june": 6, "july": 7, "august": 8, "aug": 8, "september": 9,
+    "sept": 9, "october": 10, "oct": 10, "november": 11, "nov": 11,
+    "december": 12, "dec": 12,
+}
+# "mar"/"may" short forms are omitted on purpose where they collide with common words.
+
+
+def _month_bounds(year: int, month: int) -> tuple[dt.date, dt.date]:
+    first = dt.date(year, month, 1)
+    nxt = dt.date(year + (month == 12), month % 12 + 1, 1)
+    return first, nxt - dt.timedelta(days=1)
+
+
+def resolve_range(text: str, today: dt.date,
+                  single: Optional[DateResult] = None) -> Optional[tuple[dt.date, dt.date]]:
+    """Return (from, to) for phrases like 'this week', 'next month', 'in november'.
+
+    A single resolved date becomes a one-day range. None means 'no range given';
+    the tool then applies its own default.
+    """
+    single = single or resolve_date(text, today)
+    if single.found and single.date:
+        return single.date, single.date
+
+    t = text.lower()
+    monday = today - dt.timedelta(days=today.weekday())
+    if re.search(r"\bthis\s+week\b", t):
+        return max(monday, today), monday + dt.timedelta(days=6)   # never reaches into the past
+    if re.search(r"\bnext\s+week\b", t):
+        return monday + dt.timedelta(days=7), monday + dt.timedelta(days=13)
+    if re.search(r"\bthis\s+month\b", t):
+        return today, _month_bounds(today.year, today.month)[1]
+    if re.search(r"\bnext\s+month\b", t):
+        y, m = today.year + (today.month == 12), today.month % 12 + 1
+        return _month_bounds(y, m)
+    for w in re.findall(r"[a-z]+", t):
+        if w in _MONTHS:
+            m = _MONTHS[w]
+            y = today.year + (1 if m < today.month else 0)
+            first, last = _month_bounds(y, m)
+            return (max(first, today) if (y, m) == (today.year, today.month) else first), last
+    return None
