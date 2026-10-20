@@ -58,3 +58,43 @@ def test_unknown_goes_to_llm_stage():
 def test_next_weekday_strict():
     assert resolve_date("next tuesday", TODAY).date == dt.date(2026, 10, 27)
     assert resolve_date("tuesday", TODAY).date == TODAY
+
+
+# ---------------- Week 3 routing
+@pytest.mark.parametrize("text,tool,params", [
+    ("what is due this week", "get_assignments", {"from_date": "2026-10-20", "to_date": "2026-10-25"}),
+    ("exams in november", "get_exams", {"from_date": "2026-11-01", "to_date": "2026-11-30"}),
+    ("dbms exam date", "get_exams", {"course": "Database Systems"}),
+    ("holidays next month", "get_holidays", {"from_date": "2026-11-01", "to_date": "2026-11-30"}),
+    ("events this month", "get_events", {"from_date": "2026-10-20", "to_date": "2026-10-31"}),
+    ("what will we cover in OS next tuesday", "get_session_plan",
+     {"from_date": "2026-10-27", "to_date": "2026-10-27", "course": "Operating Systems"}),
+])
+def test_week3_rules_and_params(text, tool, params):
+    d = router.route(text, TODAY)
+    assert d.tool == tool and d.stage == "rules"
+    for k, v in params.items():
+        assert d.params[k] == v
+
+
+def test_register_beats_events_rule():
+    d = router.route("register me for the hackathon", TODAY)
+    assert d.tool == "register_event" and "hackathon" in d.params["event_query"]
+
+
+def test_no_range_leaves_tool_default():
+    assert router.route("any holidays", TODAY).params == {}
+
+
+def test_kal_is_ambiguous_for_all_date_tools():
+    for q in ["kal ke exams", "kal ka assignment due", "kal holiday hai kya"]:
+        assert router.route(q, TODAY).clarification, q
+
+
+def test_this_week_never_starts_in_the_past():
+    assert router.route("assignments due this week", TODAY).params["from_date"] == "2026-10-20"
+
+
+def test_month_name_wraps_to_next_year():
+    d = router.route("holidays in january", TODAY)
+    assert d.params["from_date"] == "2027-01-01" and d.params["to_date"] == "2027-01-31"
