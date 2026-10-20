@@ -1,0 +1,10 @@
+{"updated_at": "2026-10-17T12:00:00+05:30", "updated_by_role": "teacher",
+ "items": [
+  {"batch_id": "BATCH-A", "status": "published", "course": "Computer Networks",   "title": "Subnetting worksheet",           "due_date": "2026-10-22"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Database Systems",    "title": "ER diagram for a library system", "due_date": "2026-10-23"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Operating Systems",   "title": "Process scheduling simulation",   "due_date": "2026-10-26"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Software Engineering","title": "SRS draft",                       "due_date": "2026-11-02"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Python Lab",          "title": "Past due lab record",             "due_date": "2026-10-15"},
+  {"batch_id": "BATCH-A", "status": "draft",     "course": "Operating Systems",   "title": "Unpublished assignment",          "due_date": "2026-10-25"},
+  {"batch_id": "BATCH-B", "status": "published", "course": "Database Systems",    "title": "Other batch assignment",          "due_date": "2026-10-24"}
+ ]}

@@ -1,0 +1,9 @@
+{"updated_at": "2026-10-15T16:00:00+05:30", "updated_by_role": "teacher",
+ "items": [
+  {"batch_id": "BATCH-A", "status": "published", "course": "Database Systems",   "exam_type": "Internal", "date": "2026-11-16", "start": "09:30", "duration_min": 90, "room": "Hall 1"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Operating Systems",  "exam_type": "Internal", "date": "2026-11-18", "start": "09:30", "duration_min": 90, "room": "Hall 1"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Computer Networks",  "exam_type": "Internal", "date": "2026-11-20", "start": "09:30", "duration_min": 90, "room": "Hall 2"},
+  {"batch_id": "BATCH-A", "status": "draft",     "course": "Software Engineering","exam_type": "Internal", "date": "2026-11-23", "start": "09:30", "duration_min": 90, "room": "Hall 2"},
+  {"batch_id": "BATCH-A", "status": "published", "course": "Python Lab",         "exam_type": "Viva",     "date": "2026-10-14", "start": "14:00", "duration_min": 30, "room": "Lab 2"},
+  {"batch_id": "BATCH-B", "status": "published", "course": "Database Systems",   "exam_type": "Internal", "date": "2026-11-17", "start": "09:30", "duration_min": 90, "room": "Hall 3"}
+ ]}
