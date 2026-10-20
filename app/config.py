@@ -17,6 +17,7 @@ class Settings(BaseSettings):
 
     classifier_threshold: float = 0.55
     max_tool_calls: int = 3
+    pending_ttl_seconds: int = 300   # confirm window for write actions
 
     admin_contact_name: str = "Admin Office"
     admin_contact_email: str = ""
